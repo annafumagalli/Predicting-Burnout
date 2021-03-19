@@ -50,7 +50,7 @@ image = Image.open('image.png')
 st.image(image)
 
 st.write("""
-This simple tool predicts your **burnout** risk level by employing a pre-trained machine learning model. Please answer the question on the sidebar to receive a prediction."""
+This simple tool predicts your **burnout** risk level by employing a pre-trained machine learning model. Please adjust the answers to the questions on the sidebar to receive a prediction."""
 )
 
 
