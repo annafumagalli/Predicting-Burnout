@@ -50,7 +50,7 @@ image = Image.open('image.png')
 st.image(image)
 
 st.write("""
-This simple tool predicts your **burnout** level by employing a pre-trained machine learning model. Please answer the question on the sidebar to receive a prediction."""
+This simple tool predicts your **burnout** risk level by employing a pre-trained machine learning model. Please answer the question on the sidebar to receive a prediction."""
 )
 
 
@@ -97,10 +97,10 @@ st.plotly_chart(fig, use_container_width=True)
 
 if pred <= 3.0: st.write('Your burnout level is in the **low** range :relieved:')
 
-elif pred > 3.0 and pred <= 6.0: st.write('Your burnout level is in the **medium** range :persevere:')
+elif pred > 3.0 and pred <= 6.0: st.write('Your burnout risk level is in the **medium** range :persevere:')
 
-elif pred > 6.0 and pred <= 9.0: st.write('Your burnout level is in the **high** range :weary:')
+elif pred > 6.0 and pred <= 9.0: st.write('Your burnout risk level is in the **high** range :weary:')
 
-elif pred > 9.0: st.write('Your burnout level is in the **very high** range :tired_face:')
+elif pred > 9.0: st.write('Your burnout risk level is in the **very high** range :tired_face:')
 	
 
